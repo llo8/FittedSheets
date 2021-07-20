@@ -355,6 +355,7 @@ public class SheetViewController: UIViewController {
             self.firstPanPoint = point
             self.prePanHeight = self.contentViewController.view.bounds.height
             self.isPanning = true
+            view.endEditing(true)
         }
         
         let minHeight: CGFloat = self.height(for: self.orderedSizes.first)
